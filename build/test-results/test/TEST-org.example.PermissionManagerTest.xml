@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.PermissionManagerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-09-28T19:14:25" hostname="ADELWOLF" time="0.098">
+  <properties/>
+  <testcase name="testGetCurrentPermissionLevel()" classname="org.example.PermissionManagerTest" time="0.066"/>
+  <testcase name="testGetRoleName_DEVELOPER()" classname="org.example.PermissionManagerTest" time="0.006"/>
+  <testcase name="testGetRoleName_ADMIN()" classname="org.example.PermissionManagerTest" time="0.002"/>
+  <testcase name="testGetRoleName_InvalidPermissionLevel()" classname="org.example.PermissionManagerTest" time="0.011"/>
+  <testcase name="testGetRoleName_USER()" classname="org.example.PermissionManagerTest" time="0.002"/>
+  <testcase name="testSetPermissionLevel()" classname="org.example.PermissionManagerTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

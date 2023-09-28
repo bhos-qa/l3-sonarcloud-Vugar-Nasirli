@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PermissionManager.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Vugar_Lab3</a> &gt; <a href="index.source.html" class="el_package">org.example</a> &gt; <span class="el_source">PermissionManager.java</span></div><h1>PermissionManager.java</h1><pre class="source lang-java linenums">package org.example;
+
+<span class="fc" id="L3">public class PermissionManager {</span>
+<span class="fc" id="L4">    private PermissionLevel mCurrentLevel = PermissionLevel.USER;</span>
+
+    public String getRoleName(PermissionLevel permissionLevel) {
+<span class="fc bfc" id="L7" title="All 4 branches covered.">        switch (permissionLevel) {</span>
+            case ADMIN:
+<span class="fc" id="L9">                return &quot;Admin&quot;;</span>
+            case DEVELOPER:
+<span class="fc" id="L11">                return &quot;Developer&quot;;</span>
+            case USER:
+<span class="fc" id="L13">                return &quot;User&quot;;</span>
+            default:
+<span class="fc" id="L15">                throw new IllegalArgumentException(&quot;Invalid permission level&quot; + permissionLevel);</span>
+        }
+    }
+
+    public void setPermissionLevel(PermissionLevel permissionLevel) {
+<span class="fc" id="L20">        this.mCurrentLevel = permissionLevel;</span>
+<span class="fc" id="L21">    }</span>
+
+    public PermissionLevel getCurrentPermissionLevel() {
+<span class="fc" id="L24">        return mCurrentLevel;</span>
+    }
+}
+
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.9.202303310957</span></div></body></html>
